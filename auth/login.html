@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+
+<head>
+    <title>Home 1</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="../images/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css"
+        href="//fonts.googleapis.com/css?family=Lato:400,700%7CPoppins:300,400,500,600,700">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="preloader-body">
+            <div class="cssload-container">
+                <div class="cssload-speeding-wheel"></div>
+            </div>
+            <p>Loading...</p>
+        </div>
+    </div>
+    <style>
+        .loginBox {
+            text-align: center;
+            border: 1px solid lightgray;
+            padding: 10px;
+            padding-left: 25px;
+            padding-right: 25px;
+            position: fixed;
+            left: 50%;
+            margin-left: -250px;
+            top: 50%;
+            margin-top: -250px;
+            width: 450px;
+            height: 550px;
+            border-radius: 5px
+        }
+
+        .loginBox h5 {
+            color: #00a19b
+        }
+
+        .loginBox img {
+            height: 110px;
+            width: auto;
+        }
+
+        .loginBox a {
+            text-align: left;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .loginBox {
+                position: relative;
+                left: 0;
+                top: 0;
+                padding: 10px;
+                width: 90%;
+                margin-left: 5%;
+                margin-top: 25px;
+                height: 500px;
+                border-radius: 5px
+            }
+        }
+    </style>
+    <div class="page">
+        <div class="loginBox">
+
+            <img src="../images/logo-default-222x124.png">
+
+            <h5>Sign In</h4>
+                <form id="loginForm" method="post" class="rd-form rd-mailform rd-form-centered">
+                    <div class="form-wrap">
+                        <label class="form-label" for="login-email">E-mail</label>
+                        <input class="form-input" id="login-email" type="email" name="email"
+                            data-constraints="@Email @Required">
+                    </div>
+                    <div class="form-wrap">
+                        <label class="form-label" for="login-password">Password</label>
+                        <input class="form-input" id="login-password" type="password" name="password"
+                            data-constraints="@Required">
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="g-recaptcha" id="rcaptcha" data-sitekey="6Ld2qiYdAAAAANavqrr9MRxcH7x9oLKfyDBi36cO">
+                        </div>
+                        <span id="captcha" style="color:red"></span>
+                        <script src='https://www.google.com/recaptcha/api.js'></script>
+                    </div>
+                    <div class="col-xs-12" id="validationfailed" style="color:red;display:none">
+                        Validation failed <span id="count_num"></span> attempts remaining
+                    </div>
+                    <button id="loginBtn" class="button button-block button-secondary" type="submit">Sign in</button>
+                </form>
+                <div style="text-align:left;margin-top:25px">
+                    <a href="../index.html">HOME</a>
+                    <a style="float:right" href="../forgotpassword.html">FORGOT PASSWORD</a>
+                </div>
+
+        </div>
+    </div>
+    <div class="snackbars" id="form-output-global"></div>
+    <script src="../js/core.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+
+</html>

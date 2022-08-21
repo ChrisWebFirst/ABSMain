@@ -1,0 +1,47 @@
+a.nav-link {
+    padding: 15px !important
+}
+
+section-lg bg-default {
+    padding-top: 40px !important
+}
+
+.container-large {
+    width: 90%;
+    display: block;
+    margin-left: 5%;
+
+}
+
+.team {
+    height: 160px,  !important;
+    max-height: 160px,  !important;
+
+}
+
+.team-image img {
+    height: 135px !important;
+    max-height: 135px !important;
+    width: 85px !important;
+    min-width: 85px !important;
+    max-width: 85px !important;
+}
+
+.team-inner {
+    height: 150px,  !important;
+    max-height: 150px,  !important;
+
+}
+
+div.team {
+    padding: 5px;
+}
+
+.team-content {
+    height: 150px;
+}
+
+.team-office {
+    height: 45px;
+    overflow: hidden;
+}
